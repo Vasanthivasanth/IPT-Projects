@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Nykaa {
+public class Dummyproject {
 		
 		static WebDriver driver;
 	    static Actions a;
@@ -220,11 +220,11 @@ public class Nykaa {
 		  browserlaunch();
 		  logIn();
 		  productSearch();
-		  addToCart();
+		//  addToCart();
 		 frame();
-		 addressPage();
+		addressPage();
 		  paymentPage();
-		  logout();
+		 logout();
 		  screenshot("nykaa");
   }
 }
