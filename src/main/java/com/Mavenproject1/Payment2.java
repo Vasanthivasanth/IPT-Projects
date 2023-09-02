@@ -29,6 +29,13 @@ public class Payment2 extends Baseclass {
 		
 		@FindBy(xpath=LoginpageInterface.creditcard)
 		private WebElement creditcard;
+		
+		@FindBy(xpath=LoginpageInterface.PayNow)
+		private WebElement paybtn;
+
+		public WebElement getPaybtn() {
+			return paybtn;
+		}
 
 		public WebElement getCredit() {
 			return credit;

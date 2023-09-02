@@ -1,6 +1,7 @@
 package com.base;
 
 	import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
@@ -41,13 +42,19 @@ import org.openqa.selenium.io.FileHandler;
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		}
 		
+		public static boolean deleteCookies() {
+			
+			driver.manage().deleteAllCookies();
+			return true;
+		}
+		
 		public static void close(){
 			driver.close();
 		}
 		public static void quit() {
 			driver.quit();
 		}
-		//Navigate
+		//Navigate//
 		public static void navigateTo(String url)
 		{
 			driver.navigate().to(url);
@@ -228,9 +235,40 @@ import org.openqa.selenium.io.FileHandler;
 	public static void defaultWindow() {
 	 driver.switchTo().defaultContent();
 	}
-	public static void robotClass(String str) throws Throwable {
-		 Robot r = new Robot();
-		 }
+	//Robot
+	public static void robotClass(String input) throws Throwable {
+		Robot r = new Robot();
+		if (input.equalsIgnoreCase("enter")) {
+		r.keyPress(KeyEvent.VK_ENTER);
+		}
+		else if (input.equalsIgnoreCase("escape")) {
+		r.keyPress(KeyEvent.VK_ESCAPE);
+		}
+		else if (input.equalsIgnoreCase("tab")) {
+		r.keyPress(KeyEvent.VK_TAB);
+		}
+		else if (input.equalsIgnoreCase("down")) {
+		r.keyPress(KeyEvent.VK_DOWN);
+		}
+		else if (input.equalsIgnoreCase("up")) {
+		r.keyPress(KeyEvent.VK_UP);
+		}
+		else if (input.equalsIgnoreCase("pageup")) {
+		r.keyPress(KeyEvent.VK_PAGE_UP);
+		}
+		else if (input.equalsIgnoreCase("pagedown")) {
+		r.keyPress(KeyEvent.VK_PAGE_DOWN);
+		}
+		else if (input.equalsIgnoreCase("cancel")) {
+		r.keyPress(KeyEvent.VK_CANCEL);
+		}
+		else if (input.equalsIgnoreCase("window")) {
+		r.keyPress(KeyEvent.VK_WINDOWS);
+		}
+		else if (input.equalsIgnoreCase("printscreen")) {
+		r.keyPress(KeyEvent.VK_PRINTSCREEN);
+		}
+	}
 	
 	//Method For is Enabled
 	

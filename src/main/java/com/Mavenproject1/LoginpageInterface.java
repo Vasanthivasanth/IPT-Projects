@@ -11,7 +11,7 @@ public interface LoginpageInterface {
 
 	//Product interface
 	String  mombaby="//a[text()='mom & baby']";
-	String powder="//a[text()='Baby Powder'])";
+	String powder="//a[text()='Baby Powder']";
 	String himalaya="//div[text()='Himalaya Baby Powder']";
 	String selectop="//select[@class='css-2t5nwu']";
 	String addtobag="//button[@class=' css-13zjqg6'][1]";
@@ -27,10 +27,11 @@ public interface LoginpageInterface {
 	//payment
 	
 	String credit="//p[text()='Credit/Debit Card']";
-	String cardno="(//input[@class='input-element  '])[1]";
+	String cardno="//input[@placeholder='Card Number']";
 	String expdate="//input[@label='Expiry (MM/YY)']";
 	String cvv="//input[@class='input-element  secure-font']";
-	String pay="//input[@class='input-element  secure-font']";
+	String pay="//button[@class='css-v61n2j e8tshxd0']";
 	String creditcard="//button[text()='Secure Card and pay']";
+	String PayNow="//button[text()='Pay Now']";
 	
 }

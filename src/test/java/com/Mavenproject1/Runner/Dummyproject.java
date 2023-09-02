@@ -217,7 +217,7 @@ public class Dummyproject {
 
   public static void main(String[] args) throws Throwable {
 		 
-		  browserlaunch();
+		  browserlaunch();//main method command
 		  logIn();
 		  productSearch();
 		//  addToCart();

@@ -2,28 +2,28 @@ package com.utility;
 
 public class ConfigReader {
 
-private	static String chromeLaunch=PropertyFileReader.getAPropertyFiles().getProperty("chromeLaunch");
-private	 static String launchUrl=PropertyFileReader.getAPropertyFiles().getProperty("launchUrl");
-private	static String Mobileno=PropertyFileReader.getAPropertyFiles().getProperty("Mobileno");
-private	 static String cardno=PropertyFileReader.getAPropertyFiles().getProperty("cardno");
-private	static String expdate=PropertyFileReader.getAPropertyFiles().getProperty("expdate");
-private	 static String cvv=PropertyFileReader.getAPropertyFiles().getProperty("cvv");
-public static String getChromeLaunch() {
+private	 String chromeLaunch=PropertyFileReader.getAPropertyFiles().getProperty("chromeLaunch");
+private	  String launchUrl=PropertyFileReader.getAPropertyFiles().getProperty("launchUrl");
+private	 String Mobileno=PropertyFileReader.getAPropertyFiles().getProperty("Mobileno");
+private	  String cardno=PropertyFileReader.getAPropertyFiles().getProperty("cardno");
+private	 String expdate=PropertyFileReader.getAPropertyFiles().getProperty("expdate");
+private	  String cvv=PropertyFileReader.getAPropertyFiles().getProperty("cvv");
+public  String getChromeLaunch() {
 	return chromeLaunch;
 }
-public static String getLaunchUrl() {
+public  String getLaunchUrl() {
 	return launchUrl;
 }
-public static String getMobileno() {
+public  String getMobileno() {
 	return Mobileno;
 }
-public static String getCardno() {
+public  String getCardno() {
 	return cardno;
 }
-public static String getExpdate() {
+public  String getExpdate() {
 	return expdate;
 }
-public static String getCvv() {
+public  String getCvv() {
 	return cvv;
 }
 }

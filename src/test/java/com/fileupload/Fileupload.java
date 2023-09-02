@@ -31,6 +31,10 @@ public class Fileupload extends Baseclass {
 		r.keyRelease(KeyEvent.VK_ENTER);
 	}
 	
+	private static void notepad()
+	{
+		
+	}
 	public static void main(String[] args) throws AWTException
 		{
 		
